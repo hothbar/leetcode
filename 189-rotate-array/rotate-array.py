@@ -6,8 +6,15 @@ class Solution:
         # pop from the list
         # insert at pos 0
 
-        for _ in range(k):
-            num = nums.pop()
-            nums.insert(0, num)
+        #for _ in range(k):
+            #nums.insert(0, nums.pop())
+            #if k <= len(nums) else nums[::-1]
+        k = k%len(nums)
+        lst = nums[len(nums) - k :] + nums[:len(nums) - k] 
+        for i in range(len(lst)):
+            nums[i] = lst[i]
+
+
+        
         
         
