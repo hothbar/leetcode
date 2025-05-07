@@ -7,6 +7,7 @@ class Solution:
         # insert at pos 0
 
         for _ in range(k):
-            nums.insert(0, nums.pop())
+            num = nums.pop()
+            nums.insert(0, num)
         
         
