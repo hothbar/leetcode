@@ -3,9 +3,8 @@ class Solution:
         total_set = set()
         n =len(nums)
         max_length = 0
-        for i in range(n):
-            res_set = set()
-            k = i 
+        for k in range(n):
+            res_set = set() 
             while nums[k] not in total_set :
                 total_set.add(nums[k])
                 res_set.add(nums[k])
