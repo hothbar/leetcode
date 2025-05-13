@@ -16,7 +16,6 @@ class Solution:
             s.add(nodeA)
             if nodeB in s:
                 return nodeB
-            
             s.add(nodeB)
 
             nodeA = nodeA.next
