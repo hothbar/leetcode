@@ -1,6 +1,6 @@
 class Solution:
     def threeSum(self, nums: List[int]) -> List[List[int]]:
-        nums = sorted(nums)
+        nums.sort()
         hashset = set()
 
         n = len(nums)
